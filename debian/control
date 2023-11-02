@@ -33,7 +33,9 @@ Vcs-Browser: https://github.com/pdudaemon/pkg-pdudaemon
 Package: pdudaemon
 Architecture: all
 Depends: ${misc:Depends},
-         ${python3:Depends}
+         ${python3:Depends},
+         python3-aiohttp,
+         python3-pymodbus,
 Recommends: telnet, openssh-client
 Description: daemon for controlling PDUs
  Pdudaemon provides a standard way of controlling power controllers,
